@@ -3,7 +3,7 @@
  * @Author: yang-1213
  * @Date: 2020-05-14 09:43:48
  * @LastEditors: yang-1213
- * @LastEditTime: 2020-05-14 17:28:20
+ * @LastEditTime: 2020-05-14 17:57:39
  * @Description:复制文件夹
  */
 
@@ -16,19 +16,20 @@ let mkDir = require("./utils/mkDir");
 let copyFile = require("./utils/copyFile");
 
 // 1. 获取用户参数
+// program.version("0.0.1", "-v, --version", "output the current version");
 program
-    .version("0.0.1", "-v, --version", "output the current version")
-    .command("init <dir>")
-    .action(function (dir, arg) {
-        console.log(dir, arg);
+    .command("init <dir...>")
+    .action(function (init, dir) {
+        let $path = init[1];
+        console.log(`正在创建${$path}项目`);
         // 2. 命令行旋转
-        const spinner = ora(`${dir} init`).start();
+        const spinner = ora(`project is init`).start();
         spinner.color = "yellow";
         spinner.text = "Loading...";
 
         // 先创建target文件夹
-        mkDir(path.resolve(process.cwd(), "dist"));
-        copyFile(path.resolve(__dirname, "src"), path.resolve(process.cwd(), "dist"));
+        mkDir(path.resolve(process.cwd(), $path));
+        copyFile(path.resolve(__dirname, "src"), path.resolve(process.cwd(), $path));
         setTimeout(() => {
             // 结束
             spinner.stop();
