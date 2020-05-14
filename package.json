@@ -1,0 +1,28 @@
+{
+  "name": "lj-plugin",
+  "version": "0.0.1",
+  "description": "亮健初始化模板",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yang-1213/lj-b2c-init.git"
+  },
+  "keywords": [
+    "lj",
+    "模板"
+  ],
+  "author": "yang-1213",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yang-1213/lj-b2c-init/issues"
+  },
+  "homepage": "https://github.com/yang-1213/lj-b2c-init#readme",
+  "dependencies": {
+    "commander": "^5.1.0",
+    "ora": "^4.0.4",
+    "yargs": "^15.3.1"
+  }
+}

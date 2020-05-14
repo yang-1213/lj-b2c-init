@@ -1,0 +1,131 @@
+// 内边距相关  
+.padding-loop(@counter:20) when (@counter > 0) {
+    .padding-loop((@counter - 1));
+    .padding-@{counter}{
+        padding: @counter*0.1rem;
+    }
+    .padding-top-@{counter}{
+        padding-top: @counter*0.1rem;
+    }
+    .padding-left-@{counter}{
+        padding-left: @counter*0.1rem;
+    }
+    .padding-right-@{counter}{
+        padding-right: @counter*0.1rem;
+    }
+    .padding-bottom-@{counter}{
+        padding-bottom: @counter*0.1rem;
+    }
+    .padding-x-@{counter}{
+        padding-left: @counter*0.1rem;
+        padding-right: @counter*0.1rem;
+    }
+    .padding-y-@{counter}{
+        padding-top: @counter*0.1rem;
+        padding-bottom: @counter*0.1rem;
+    }
+
+}
+// 外边距相关 
+.margin-loop(@counter:20) when (@counter > 0) {
+    .margin-loop((@counter - 1));
+    .margin-@{counter}{
+        margin: @counter*0.1rem;
+    }
+    .margin-top-@{counter}{
+        margin-top: @counter*0.1rem;
+    }
+    .margin-left-@{counter}{
+        margin-left: @counter*0.1rem;
+    }
+    .margin-right-@{counter}{
+        margin-right: @counter*0.1rem;
+    }
+    .margin-bottom-@{counter}{
+        margin-bottom: @counter*0.1rem;
+    }
+    .margin-x-@{counter}{
+        margin-left: @counter*0.1rem;
+        margin-right: @counter*0.1rem;
+    }
+    .margin-y-@{counter}{
+        margin-top: @counter*0.1rem;
+        margin-bottom: @counter*0.1rem;
+    }
+}
+.position-loop(@counter:20) when (@counter > 0){
+    .position-loop((@counter - 1));
+    .top-@{counter}{
+        top: @counter*0.1rem;
+    }
+    .left-@{counter}{
+        left: @counter*0.1rem;
+    }
+    .right-@{counter}{
+        right: @counter*0.1rem;
+    }
+    .bottom-@{counter}{
+        bottom: @counter*0.1rem;
+    }
+}
+
+body {
+    /* flex布局相关样式 */
+    .flex {
+        display: flex;
+    }
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+    .flex-nowrap {
+        flex-wrap: nowrap;
+    }
+    .justify-center {
+        justify-content: center;
+    }
+    .justify-space-around {
+        justify-content: space-around;
+    }
+    .justify-space-between {
+        justify-content: space-between;
+    }
+    .align-center {
+        align-items: center;
+        align-content: center;
+    }
+    .align-start {
+        align-items: flex-start;
+    }
+    .align-end {
+        align-items: flex-end;
+    }
+
+    // 内边距相关样式   
+    .padding-loop(20);
+      // 外边距相关 
+    .margin-loop(20);
+
+
+    //  字体布局方式 
+    .text-center{
+        text-align: center;
+    }
+    .text-left{
+        text-align: left;
+    }
+    .text-right{
+        text-align: right;
+    }
+
+    // 定位
+    .position-relative{
+        position: relative;
+    }
+    .position-absolute{
+        position: absolute;
+    }
+    .position-fixed{
+        position: fixed;
+    }
+    .position-loop(30); 
+}

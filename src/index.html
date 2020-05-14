@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="author" content="360lj Pharmacies">
+    <meta name="Copyright" content="360lj.com">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name=" Description"
+          content="【亮健好药网】(m.360lj.com)在线销售中西成药,医疗器械,计生情趣,隐形眼镜,保健食品,个护生活品,传统滋补品等.网上购买药品就上亮健好药网，100%正品保障，为您网上买药提供超越传统药店的贴心服务。">
+    <meta name="Keywords" content="亮健好药网">
+    <title>标题</title>
+    <link rel="shortcut icon" href="//image.360lj.com/images/icon.ico">
+    <link rel="stylesheet" href="//image.360lj.com/vshop/zhuanti/mdr/css/swiper.min.css">
+    <link rel="stylesheet" href="//image.360lj.com/vshop/zhuanti/2019/dc-6/dwj/css/reset.css?v=20190521">
+
+    <link rel="stylesheet" href="./css/style.min.css?1234">
+
+    <script src="//image.360lj.com/js/jquery.js"></script>
+</head>
+
+<body>
+    <main class="main">
+        <!-- banner -->
+        <header class="banner">
+            <img src="./img/banner.png" class="none">
+        </header>
+
+        <!-- 滑动导航 -->
+        <div class="line"></div>
+        <div class="nav">
+            <div class="swiper-container">
+                <div class="swiper-wrapper wrapper">
+                    <div class="swiper-slide list on">领券专区</div>
+                    <div class="swiper-slide list">留言抽奖</div>
+                    <div class="swiper-slide list">特惠套餐</div>
+                    <div class="swiper-slide list">猛男行动</div>
+                    <div class="swiper-slide list">前列腺</div>
+                    <div class="swiper-slide list">计生情趣</div>
+                    <div class="swiper-slide list">生发乌发</div>
+                    <div class="swiper-slide list">更多推荐</div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="direction direction-prev"></div>
+            <div class="direction direction-next"></div>
+        </div>
+
+        <!-- 优惠券 -->
+        <div class="discount flex"></div>
+
+        <!-- 商品详情 -->
+        <div class="goods-1">
+        </div>
+
+    </main>
+    <!-- 返回顶部 -->
+    <div class="footer">
+        <div class="to-top footer-item"></div>
+        <a href="/" class="footer-item"></a>
+    </div>
+
+    <!-- #include file="/include/lj/zxkf_and_return.html" -->
+</body>
+
+<script type="text/html" id='templateId'>
+    <div>
+        <div class="goods-wrapper part" s-for='item,index in productArr'>
+            <div class="imgTitle">
+                <img src="//image.360lj.com/images/grey.gif" style='height:1px' >
+            </div>
+            <div class='sub-tit'>
+                <div class="item active">壮阳补肾</div>
+                <div class="item">女性护理</div>
+                <div class="item">美容养颜</div>
+                <div class="item">慢病防治</div>
+            </div>
+            <div class="lj-content">
+                <a href="/product/{{id}}.html" data-rep="{{id}}" class="item" s-for='id,subIndex in item'>
+                    <img data-original="{{productInfo[id]['ProductImageUrl']}}" src="//image.360lj.com/images/grey.gif" class="img none" />
+                    <div class="title ellips">{{productInfo[id]['ProductName']}}</div>
+                    <div class="price">
+                        <div class="new-price">￥<span data-price=""></span></div>
+                        <div class="go">立即<br>购买</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</script>
+<script src="//image.360lj.com/common/javascript/template.min.js?v=123456"></script>
+<script src="//image.360lj.com/common/javascript/san.min.js?v=12345"></script>
+<script src="./js/dist/index.prod.js"></script>
+
+</html>
