@@ -1,6 +1,6 @@
 {
   "name": "lj-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "亮健初始化模板",
   "main": "index.js",
   "private": false,
@@ -15,6 +15,9 @@
     "lj",
     "模板"
   ],
+  "bin": {
+    "lj": "./index.js"
+  },
   "author": "yang-1213",
   "license": "ISC",
   "bugs": {

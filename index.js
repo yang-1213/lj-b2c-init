@@ -3,7 +3,7 @@
  * @Author: yang-1213
  * @Date: 2020-05-14 09:43:48
  * @LastEditors: yang-1213
- * @LastEditTime: 2020-05-14 17:57:39
+ * @LastEditTime: 2020-05-15 08:55:52
  * @Description:复制文件夹
  */
 
@@ -16,7 +16,7 @@ let mkDir = require("./utils/mkDir");
 let copyFile = require("./utils/copyFile");
 
 // 1. 获取用户参数
-// program.version("0.0.1", "-v, --version", "output the current version");
+// program.version("0.0.2", "-v, --version", "output the current version");
 program
     .command("init <dir...>")
     .action(function (init, dir) {
